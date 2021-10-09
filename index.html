@@ -4,28 +4,54 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 
-body, html {
+/*a web page is composed of several artifacts and resources, 
+resources are artifacts, which can be .html files, .css files, .js files,
+artifacts can also be an image file (.png, .jpg etc)*/
 
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .bg-image {
-
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/137_bg01.png");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
 
 .overlay-text {
-
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
 }
 
 .overlay-text button {
-
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: black;
+  background-color: #ddd;
+  text-align: center;
+  cursor: pointer;
 }
 
 .hero-text button:hover {
-
+  background-color: #555;
+  color: white;
 }
 
 </style>
+
 </head>
+
 <body>
 
 <div class="bg-image">
@@ -34,14 +60,7 @@ body, html {
 
     <h1 style="font-size:50px">Join Hacking Clan</h1>
 
-    <p> 
-      <b>HINT: </b>
-
-      <i>137 80 78 71 13 10 26 10</i>
-
-      <b>"__Mos5ad"</b>
-      
-    </p>
+    <p><b>HINT: </b>This is a simple challenge to be solve by anyone who feels hes a 1337, take note of all artifact on this page, especially the ones that begins with <i>137 80 78 71 13 10 26 10</i> and remember you are welcome to the <b>"__Mos5ad"</b>.</p>
 
     <button onclick="alert('What you seek is right on this page')">Hint</button>
 
@@ -50,4 +69,5 @@ body, html {
 </div>
   
 </body>
+
 </html>
